@@ -1,0 +1,2 @@
+# charity
+Charitify NGO Template
