@@ -1,0 +1,2189 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    scroll-behavior: smooth;
+}
+
+.nav{
+    font-size: larger;
+    background-color: black;
+    color: antiquewhite;
+    padding: 10px;
+    /* align-items: center; */
+    /* position: fixed; */
+}
+.button{
+    /* background-color: green;  */
+    color: antiquewhite;
+    border: 6px; 
+    padding-left: 1050px;
+     
+}
+.icons{
+    background-color:rgb(248 ,148, 100) ;
+
+}
+.icon-2{
+    padding: 20px;
+color: antiquewhite;
+}
+p{
+    font-size: xx-small;
+}
+.navbar-brand a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+.navbar-brand button,navbar-toggler{
+    background-color: rgb(248 ,148, 100) ;
+}
+.card{
+    align-items: center;
+}
+.hero {
+      background: url('https://via.placeholder.com/1600x600') center/cover no-repeat;
+      color: white;
+      height: 600px;
+      display: flex;
+      align-items: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .about {
+      padding: 60px 0;
+    }
+    .cause-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    .footer {
+      background: #333;
+      color: #ccc;
+      padding: 40px 0;
+    }
+    .container {
+  position: relative;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px; /* Adjust as needed */
+    width: 100%;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    text-align: left;
+    flex: 1;
+    min-width: 280px; /* Minimum width for cards before wrapping */
+    max-width: 380px; /* Maximum width for cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.icon {
+    margin-bottom: 20px;
+}
+
+.icon i {
+    font-size: 48px;
+    color: #ff9933; /* Orange color for icons */
+}
+
+.card h3 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: normal; /* To match the image's font weight */
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.read-more {
+    color: #ff9933; /* Orange color for "Read More" */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.2s ease-in-out;
+}
+
+.read-more:hover {
+    color: #e68a00; /* Slightly darker orange on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 90%; /* Adjust card width for smaller screens */
+    }
+
+}
+
+.recent-causes {
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: normal; /* To match the image */
+    color: #333;
+}
+
+.section-description {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 50px;
+    line-height: 1.5;
+}
+
+.causes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.cause-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    flex: 1;
+    min-width: 280px;
+    max-width: 380px;
+    overflow: hidden; /* Ensures image corners are rounded correctly if the image itself isn't */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease-in-out;
+}
+
+.cause-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 250px; /* Fixed height for consistency */
+    overflow: hidden;
+}
+
+.card-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the area without distortion */
+    display: block;
+}
+
+.donate-button-overlay {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 2;
+}
+
+.donate-now {
+    background-color: #ff9933; /* Orange background */
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.donate-now:hover {
+    background-color: #e68a00; /* Darker orange on hover */
+}
+
+/* Progress Circle */
+.progress-circle {
+    position: absolute;
+    bottom: -25px; /* Adjust to position the circle half-out of the image */
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 3; /* Ensure it's above the image */
+}
+
+.circular-chart {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.circle-bg {
+    fill: none;
+    stroke: #eee; /* Light grey background for the circle */
+    stroke-width: 3.8;
+}
+
+.circle {
+    fill: none;
+    stroke: #ff9933; /* Orange progress bar */
+    stroke-width: 3.8;
+    stroke-linecap: round;
+    transition: stroke-dasharray .3s ease-in-out;
+}
+
+.circular-chart .percentage {
+    fill: #333; /* Color of the percentage text */
+    font-family: sans-serif;
+    font-size: 0.5em; /* Adjust based on viewBox size */
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+
+
+.card-content {
+    padding: 30px 25px 25px; /* Adjust top padding to account for the circle */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Allows content to push read more to bottom */
+}
+
+.card-content h3 {
+    font-size: 22px;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.card-content p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Allows paragraph to take up available space */
+}
+
+.goals {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-top: 15px; /* Space from description */
+    border-top: 1px solid #eee; /* Separator line */
+}
+
+.goal-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.goal-item i {
+    color: #ff9933; /* Orange icon */
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.read-more {
+    color: #ff9933; /* Orange color for "Read More" */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.2s ease-in-out;
+    display: inline-block; /* Allows padding/margin if needed */
+    margin-top: 10px; /* Space from goals */
+}
+
+.read-more:hover {
+    color: #e68a00; /* Slightly darker orange on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 30px;
+    }
+
+    .section-description {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .causes-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cause-card {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 26px;
+    }
+
+    .section-description {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    .card-content h3 {
+        font-size: 20px;
+    }
+
+    .card-content p {
+        font-size: 14px;
+    }
+
+    .goals {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+}
+
+
+.about-us-section {
+    display: flex;
+    position: relative;
+    padding: 60px 0; /* Vertical padding for the section */
+    justify-content: center; /* Center content horizontally */
+    min-height: 600px; /* Minimum height for the section to show background shapes */
+    overflow: hidden; /* Hide overflowing background shapes */
+}
+
+/* Background Shapes */
+.left-empty-space {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%; /* Roughly 25% of the left side */
+    height: 100%;
+    background-color: #fdf5ec; /* Light cream/orange color */
+    z-index: 0; /* Behind content */
+    border-bottom-right-radius: 50%; /* Create the curved effect */
+    transform: translateX(-20%); /* Adjust to fine-tune the curve's starting point */
+}
+
+.right-bottom-shape {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60%; /* Adjust size as needed */
+    height: 70%; /* Adjust size as needed */
+    background-color: #fdf5ec; /* Light cream/orange color */
+    z-index: 0; /* Behind content */
+    border-top-left-radius: 50%; /* Create the curved effect */
+    transform: translateX(30%); /* Adjust to fine-tune the curve's starting point */
+}
+
+
+.content-wrapper {
+    position: relative; /* To bring content above shapes */
+    z-index: 1; /* Ensure content is above the background shapes */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center cards if they wrap */
+    gap: 30px; /* Space between cards */
+    max-width: 1200px; /* Max width for content */
+    width: 100%;
+    padding: 0 20px; /* Horizontal padding for smaller screens */
+}
+
+/* Person Card (Jonathan Smith) */
+.person-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    padding: 40px 30px;
+    text-align: center;
+    flex: 0 0 350px; /* Fixed width for this card, won't grow/shrink */
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Pushes signature to bottom */
+    position: relative;
+    z-index: 2; /* Ensure it's above other cards if overlap occurs */
+}
+
+.profile-pic-wrapper {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 2px solid #ff9933; /* Orange border around profile pic */
+    padding: 3px; /* Space for the border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff; /* Ensures inner circle is white if img doesn't fill perfectly */
+}
+
+.profile-pic-wrapper img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Make image round */
+    object-fit: cover;
+}
+
+.person-card h4 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: normal;
+}
+
+.person-card .role {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.person-card .quote {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.person-card .signature {
+    max-width: 150px; /* Adjust size as needed */
+    height: auto;
+    display: block;
+    margin-top: auto; /* Pushes to the bottom */
+}
+
+/* Info Cards (Our History, Our Mission) */
+.info-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    flex: 1; /* Allows these cards to grow/shrink */
+    min-width: 300px;
+    max-width: 380px;
+    overflow: hidden; /* For image border-radius */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease-in-out;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-image-container {
+    width: 100%;
+    height: 250px; /* Fixed height for consistent image size */
+    overflow: hidden;
+}
+
+.card-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.info-card h3 {
+    font-size: 22px;
+    color: #333;
+    margin: 25px 25px 15px;
+    font-weight: normal;
+}
+
+.info-card p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+    margin: 0 25px 25px;
+    flex-grow: 1; /* Pushes "Read More" to bottom */
+}
+
+.read-more-btn {
+    background-color: #ff9933; /* Orange button background */
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Allows padding */
+    margin: 0 25px 25px; /* Spacing from bottom and sides */
+    align-self: flex-start; /* Aligns button to the left within its card */
+}
+
+.read-more-btn:hover {
+    background-color: #e68a00; /* Darker orange on hover */
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .left-empty-space {
+        width: 35%;
+        transform: translateX(-15%);
+    }
+
+    .right-bottom-shape {
+        width: 70%;
+        height: 60%;
+        transform: translateX(20%);
+    }
+
+    .person-card, .info-card {
+        max-width: 45%; /* Allow cards to take up more width */
+        min-width: 300px; /* Ensure they don't get too small */
+    }
+}
+
+@media (max-width: 768px) {
+    .about-us-section {
+        padding: 40px 0;
+        min-height: auto; /* Allow height to adjust */
+    }
+
+    .left-empty-space, .right-bottom-shape {
+        display: none; /* Hide complex shapes on smaller screens for simplicity */
+    }
+
+    .content-wrapper {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center stacked cards */
+        gap: 25px;
+        padding: 0 15px;
+    }
+
+    .person-card, .info-card {
+        width: 100%; /* Take full width */
+        max-width: 400px; /* Limit max width for readability */
+        padding: 30px 20px;
+    }
+
+    .card-image-container {
+        height: 200px; /* Adjust image height */
+    }
+
+    .info-card h3 {
+        font-size: 20px;
+        margin: 20px 20px 10px;
+    }
+
+    .info-card p, .read-more-btn {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .person-card h4 {
+        font-size: 22px;
+    }
+
+    .person-card .quote {
+        font-size: 15px;
+    }
+
+    .info-card h3 {
+        font-size: 18px;
+    }
+
+    .info-card p {
+        font-size: 14px;
+    }
+
+    .read-more-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+
+.featured-project-section {
+    position: relative;
+    width: 100%;
+    min-height: 700px; /* Adjust height as needed */
+    background: url('your-background-image.jpg') no-repeat center center/cover; /* Replace with your actual background image path */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px; /* Add some padding */
+    box-sizing: border-box;
+    overflow: hidden; /* For the bottom-right dot */
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for text readability */
+    z-index: 1;
+}
+
+.content-container {
+    position: relative;
+    z-index: 2; /* Ensure content is above the overlay */
+    display: flex;
+    align-items: center;
+    gap: 50px; /* Space between text and video */
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.text-content {
+    flex: 1;
+    max-width: 600px; /* Limit text content width */
+    text-align: left;
+}
+
+.category {
+    background-color: #ff9933; /* Orange background for category tag */
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block; /* Allows padding and border-radius */
+    margin-bottom: 20px;
+}
+
+.text-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    font-weight: bold; /* Based on image appearance */
+    color: #fff;
+}
+
+.text-content p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+/* Progress Bar */
+.progress-bar-container {
+    margin-bottom: 25px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.3); /* Lighter white for background */
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #ff9933; /* Orange fill */
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out;
+}
+
+.goals {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.goal-item {
+    display: flex;
+    align-items: center;
+}
+
+.goal-item i {
+    color: #ff9933; /* Orange icon */
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.donate-btn {
+    background-color: #ff9933; /* Orange button */
+    color: #fff;
+    padding: 15px 35px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Allows padding and alignment */
+}
+
+.donate-btn:hover {
+    background-color: #e68a00; /* Darker orange on hover */
+}
+
+/* Video Preview Section */
+.video-preview {
+    position: relative;
+    flex-shrink: 0; /* Prevents video container from shrinking */
+    width: 450px; /* Fixed width for the video container */
+    height: 300px; /* Fixed height for the video container */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.video-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the area */
+    display: block;
+}
+
+.play-button-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.play-button-overlay:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.play-button-overlay i {
+    font-size: 60px;
+    color: #ff9933; /* Orange play icon */
+    background-color: #fff; /* White background for play icon */
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+}
+
+.play-button-overlay i:hover {
+    transform: scale(1.05);
+}
+
+/* Bottom-right decorative dot */
+.bottom-right-dot {
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    width: 30px;
+    height: 30px;
+    background-color: #ff9933; /* Orange color */
+    border-radius: 50%;
+    z-index: 2; /* Above overlay but behind main content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .content-container {
+        flex-direction: column; /* Stack content vertically */
+        text-align: center;
+        gap: 40px;
+    }
+
+    .text-content {
+        max-width: 100%; /* Allow text to take full width */
+    }
+
+    .category {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .text-content h1 {
+        font-size: 40px;
+    }
+
+    .video-preview {
+        width: 100%;
+        max-width: 500px; /* Limit video width on smaller screens */
+        height: auto; /* Adjust height proportionally */
+    }
+}
+
+@media (max-width: 768px) {
+    .featured-project-section {
+        min-height: 600px; /* Adjust min height */
+        padding: 40px 15px;
+    }
+
+    .text-content h1 {
+        font-size: 32px;
+    }
+
+    .text-content p {
+        font-size: 16px;
+    }
+
+    .donate-btn {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+
+    .play-button-overlay i {
+        font-size: 50px;
+        padding: 15px;
+    }
+
+    .bottom-right-dot {
+        width: 25px;
+        height: 25px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .featured-project-section {
+        min-height: 500px;
+        padding: 30px 10px;
+    }
+
+    .text-content h1 {
+        font-size: 28px;
+    }
+
+    .text-content p {
+        font-size: 15px;
+    }
+
+    .goals {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .video-preview {
+        height: 250px; /* Fixed height for very small screens */
+    }
+}
+
+.volunteers-section {
+    position: relative;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden; /* Hide overflowing decorative shape */
+    min-height: 700px; /* Adjust as needed */
+}
+
+.decorative-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%; /* Adjust size of the shape */
+    height: 100%;
+    background-color: #fdf5ec; /* Light cream/orange color */
+    border-bottom-right-radius: 50% 50%; /* Create the curved effect */
+    transform: translateX(-20%); /* Adjust to fine-tune the curve's starting point */
+    z-index: 0; /* Behind content */
+}
+
+.volunteers-header {
+    position: relative; /* Above decorative shape */
+    z-index: 1;
+    margin-bottom: 50px;
+    max-width: 700px;
+    width: 100%;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: normal; /* As seen in image */
+    color: #333;
+}
+
+.section-description {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 0;
+}
+
+.volunteers-content {
+    position: relative; /* Above decorative shape */
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    gap: 50px; /* Space between image grid and text info */
+    max-width: 1200px;
+    width: 100%;
+}
+
+.volunteer-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* Space between images */
+    flex-shrink: 0; /* Prevent from shrinking */
+    max-width: 420px; /* Max width for image grid */
+    box-sizing: border-box;
+}
+
+.image-box {
+    width: 200px; /* Fixed size for images */
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images cover the box */
+    display: block;
+}
+
+.volunteer-text-info {
+    text-align: left;
+    flex-grow: 1; /* Allows text content to take available space */
+    max-width: 600px; /* Limit text width for readability */
+    background-color: #fff; /* White background for the text box area */
+    padding: 40px; /* Internal padding */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    position: relative; /* For the small orange dot in the corner */
+}
+
+.volunteer-text-info h3 {
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: normal;
+}
+
+.volunteer-text-info .tagline {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.volunteer-text-info .description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.benefits-list {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.benefits-list li {
+    display: flex;
+    align-items: flex-start; /* Align icon and text at the top */
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #555;
+}
+
+.benefits-list li i {
+    color: #ff9933; /* Orange checkmark icon */
+    margin-right: 12px;
+    font-size: 18px;
+    margin-top: 3px; /* Adjust vertical alignment of icon */
+}
+
+.join-btn {
+    background-color: #ff9933; /* Orange button */
+    color: #fff;
+    padding: 15px 35px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Allows padding and alignment */
+}
+
+.join-btn:hover {
+    background-color: #e68a00; /* Darker orange on hover */
+}
+
+/* Scroll to top button */
+.scroll-to-top-btn {
+    position: fixed; /* Fixed position relative to viewport */
+    bottom: 20px; /* 20px from bottom */
+    right: 20px; /* 20px from right */
+    background-color: #ff9933; /* Orange background */
+    color: #fff;
+    width: 50px; /* Circular button size */
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 100; /* Ensure it's on top of everything */
+}
+
+.scroll-to-top-btn:hover {
+    background-color: #e68a00;
+    transform: translateY(-3px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .volunteers-content {
+        flex-direction: column; /* Stack image grid and text vertically */
+        align-items: center;
+        gap: 40px;
+    }
+
+    .volunteer-images {
+        margin-bottom: 20px; /* Add space below images when stacked */
+    }
+
+    .volunteer-text-info {
+        max-width: 700px; /* Allow more width for text info */
+        padding: 30px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .section-description {
+        font-size: 16px;
+    }
+    .decorative-shape {
+        width: 40%;
+        transform: translateX(-15%);
+    }
+}
+
+@media (max-width: 768px) {
+    .volunteers-section {
+        padding: 60px 15px;
+    }
+
+    .volunteer-images {
+        grid-template-columns: 1fr; /* Stack images in a single column */
+        max-width: 250px; /* Limit single column image width */
+        gap: 15px;
+    }
+
+    .image-box {
+        width: 250px; /* Adjust individual image box size */
+        height: 250px;
+    }
+
+    .volunteer-text-info h3 {
+        font-size: 28px;
+    }
+
+    .volunteer-text-info .tagline {
+        font-size: 18px;
+    }
+
+    .volunteer-text-info .description,
+    .benefits-list li {
+        font-size: 15px;
+    }
+
+    .join-btn {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+
+    .decorative-shape {
+        display: none; /* Hide decorative shape on smaller screens */
+    }
+
+    .scroll-to-top-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 28px;
+    }
+
+    .section-description {
+        font-size: 15px;
+    }
+
+    .volunteer-images {
+        max-width: 100%; /* Allow image to take full width */
+    }
+
+    .image-box {
+        width: 100%; /* Make image fill available width */
+        height: auto; /* Adjust height proportionally */
+        max-width: 250px; /* Maximize size for single image */
+        margin-left: auto; /* Center single image */
+        margin-right: auto;
+    }
+
+    .volunteer-text-info {
+        padding: 25px 20px;
+    }
+}
+/* General body and common section styling */
+
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: normal; /* To match the image */
+    color: #333;
+    text-align: center;
+}
+
+.section-description {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 50px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Recent Causes Section Specific Styles */
+.recent-causes-section {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center; /* For the title and description */
+}
+
+.causes-grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Space between cards */
+}
+
+.cause-item-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    flex: 1; /* Allows cards to grow/shrink */
+    min-width: 280px;
+    max-width: 380px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease-in-out;
+}
+
+.cause-item-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 250px; /* Fixed height for consistent images */
+    overflow: hidden;
+}
+
+.card-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.donate-btn-overlay {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 2;
+}
+
+.donate-now-btn {
+    background-color: #ff9933; /* Orange button background */
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.donate-now-btn:hover {
+    background-color: #e68a00; /* Darker orange on hover */
+}
+
+/* Progress Circle */
+.progress-circle {
+    position: absolute;
+    bottom: -25px; /* Adjust to position the circle half-out of the image */
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+}
+
+.circular-chart {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.circle-bg {
+    fill: none;
+    stroke: #eee; /* Light grey background for the circle */
+    stroke-width: 3.8;
+}
+
+.circle {
+    fill: none;
+    stroke: #ff9933; /* Orange progress bar */
+    stroke-width: 3.8;
+    stroke-linecap: round;
+    transition: stroke-dasharray .3s ease-in-out;
+}
+
+.circular-chart .percentage {
+    fill: #333;
+    font-family: sans-serif;
+    font-size: 0.5em;
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+
+.card-content-area {
+    padding: 30px 25px 25px; /* Adjust top padding to account for the circle */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Allows content to push read more to bottom */
+}
+
+.card-content-area h3 {
+    font-size: 22px;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.card-content-area p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Allows paragraph to take up available space */
+}
+
+.cause-goals {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee; /* Separator line */
+}
+
+.goal-info {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.goal-info i {
+    color: #ff9933; /* Orange icon */
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.read-more-text {
+    color: #ff9933; /* Orange color for "Read More" */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.2s ease-in-out;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.read-more-text:hover {
+    color: #e68a00; /* Darker orange on hover */
+}
+
+/* Responsive adjustments for Recent Causes */
+@media (max-width: 768px) {
+    .recent-causes-section {
+        padding: 20px 15px;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .section-description {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .causes-grid-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cause-item-card {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 26px;
+    }
+
+    .section-description {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    .card-content-area h3 {
+        font-size: 20px;
+    }
+
+    .card-content-area p {
+        font-size: 14px;
+    }
+
+    .cause-goals {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+}
+/* General body styling (can be unified if combining all sections) */
+
+
+/* About Us Section Specific Styles */
+.about-us-section {
+    display: flex;
+    position: relative;
+    padding: 60px 0; /* Vertical padding for the section */
+    justify-content: center; /* Center content horizontally */
+    min-height: 600px; /* Minimum height for the section to show background shapes */
+    overflow: hidden; /* Hide overflowing background shapes */
+}
+
+/* Background Shapes */
+.about-us-left-empty-space {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%; /* Roughly 25% of the left side */
+    height: 100%;
+    background-color: #fdf5ec; /* Light cream/orange color */
+    z-index: 0; /* Behind content */
+    border-bottom-right-radius: 50%; /* Create the curved effect */
+    transform: translateX(-20%); /* Adjust to fine-tune the curve's starting point */
+}
+
+.about-us-right-bottom-shape {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60%; /* Adjust size as needed */
+    height: 70%; /* Adjust size as needed */
+    background-color: #fdf5ec; /* Light cream/orange color */
+    z-index: 0; /* Behind content */
+    border-top-left-radius: 50%; /* Create the curved effect */
+    transform: translateX(30%); /* Adjust to fine-tune the curve's starting point */
+}
+
+.about-us-content-wrapper {
+    position: relative; /* To bring content above shapes */
+    z-index: 1; /* Ensure content is above the background shapes */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center cards if they wrap */
+    gap: 30px; /* Space between cards */
+    max-width: 1200px; /* Max width for content */
+    width: 100%;
+    padding: 0 20px; /* Horizontal padding for smaller screens */
+}
+
+/* Person Card (Jonathan Smith) */
+.about-us-person-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    padding: 40px 30px;
+    text-align: center;
+    flex: 0 0 350px; /* Fixed width for this card, won't grow/shrink */
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Pushes signature to bottom */
+    position: relative;
+    z-index: 2; /* Ensure it's above other cards if overlap occurs */
+}
+
+.about-us-profile-pic-wrapper {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 2px solid #ff9933; /* Orange border around profile pic */
+    padding: 3px; /* Space for the border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff; /* Ensures inner circle is white if img doesn't fill perfectly */
+}
+
+.about-us-profile-pic-wrapper img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Make image round */
+    object-fit: cover;
+}
+
+.about-us-person-card h4 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: normal;
+}
+
+.about-us-person-card .about-us-role {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.about-us-person-card .about-us-quote {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.about-us-person-card .about-us-signature {
+    max-width: 150px; /* Adjust size as needed */
+    height: auto;
+    display: block;
+    margin-top: auto; /* Pushes to the bottom */
+}
+
+/* Info Cards (Our History, Our Mission) */
+.about-us-info-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    flex: 1; /* Allows these cards to grow/shrink */
+    min-width: 300px;
+    max-width: 380px;
+    overflow: hidden; /* For image border-radius */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease-in-out;
+}
+
+.about-us-info-card:hover {
+    transform: translateY(-5px);
+}
+
+.about-us-card-image-container {
+    width: 100%;
+    height: 250px; /* Fixed height for consistent image size */
+    overflow: hidden;
+}
+
+.about-us-card-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.about-us-info-card h3 {
+    font-size: 22px;
+    color: #333;
+    margin: 25px 25px 15px;
+    font-weight: normal;
+}
+
+.about-us-info-card p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+    margin: 0 25px 25px;
+    flex-grow: 1; /* Pushes "Read More" to bottom */
+}
+
+.about-us-read-more-btn {
+    background-color: #ff9933; /* Orange button background */
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Allows padding */
+    margin: 0 25px 25px; /* Spacing from bottom and sides */
+    align-self: flex-start; /* Aligns button to the left within its card */
+}
+
+.about-us-read-more-btn:hover {
+    background-color: #e68a00; /* Darker orange on hover */
+}
+
+
+/* Responsive Adjustments for About Us Section */
+@media (max-width: 1024px) {
+    .about-us-left-empty-space {
+        width: 35%;
+        transform: translateX(-15%);
+    }
+
+    .about-us-right-bottom-shape {
+        width: 70%;
+        height: 60%;
+        transform: translateX(20%);
+    }
+
+    .about-us-person-card, .about-us-info-card {
+        max-width: 45%; /* Allow cards to take up more width */
+        min-width: 300px; /* Ensure they don't get too small */
+    }
+}
+
+@media (max-width: 768px) {
+    .about-us-section {
+        padding: 40px 0;
+        min-height: auto; /* Allow height to adjust */
+    }
+
+    .about-us-left-empty-space, .about-us-right-bottom-shape {
+        display: none; /* Hide complex shapes on smaller screens for simplicity */
+    }
+
+    .about-us-content-wrapper {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center stacked cards */
+        gap: 25px;
+        padding: 0 15px;
+    }
+
+    .about-us-person-card, .about-us-info-card {
+        width: 100%; /* Take full width */
+        max-width: 400px; /* Limit max width for readability */
+        padding: 30px 20px;
+    }
+
+    .about-us-card-image-container {
+        height: 200px; /* Adjust image height */
+    }
+
+    .about-us-info-card h3 {
+        font-size: 20px;
+        margin: 20px 20px 10px;
+    }
+
+    .about-us-info-card p, .about-us-read-more-btn {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-us-person-card h4 {
+        font-size: 22px;
+    }
+
+    .about-us-person-card .about-us-quote {
+        font-size: 15px;
+    }
+
+    .about-us-info-card h3 {
+        font-size: 18px;
+    }
+
+    .about-us-info-card p {
+        font-size: 14px;
+    }
+
+    .about-us-read-more-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+/* General body styling (can be unified if combining all sections) */
+
+/* Footer Section Specific Styles */
+.main-footer {
+    background-color: #2c2c2c; /* Dark grey background */
+    color: #b0b0b0; /* Light grey text */
+    padding: 20px 0; /* Vertical padding */
+    font-size: 14px;
+    position: relative; /* For scroll button */
+}
+
+.footer-top-logos {
+    background-color: #222; /* Slightly darker background for logo strip */
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px; /* Space between logos */
+    margin-bottom: 40px;
+}
+
+.footer-top-logos img {
+    max-width: 100px; /* Max width for logos */
+    height: auto;
+    filter: grayscale(100%) brightness(200%); /* Make logos look white/light grey */
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.footer-top-logos img:hover {
+    opacity: 1;
+}
+
+.footer-main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 40px; /* Padding bottom for space before bottom bar */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Separator line */
+}
+
+.footer-col {
+    flex: 1; /* Allow columns to grow */
+    min-width: 250px; /* Minimum width before wrapping */
+    margin-bottom: 30px; /* Space when wrapped */
+    padding: 0 15px; /* Internal padding */
+}
+
+.footer-col h4 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+
+.footer-about .footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-about .footer-logo img {
+    height: 30px; /* Adjust logo height */
+    margin-right: 10px;
+    filter: brightness(200%); /* Make logo white/light */
+}
+
+.footer-about .footer-logo span {
+    font-size: 13px;
+    color: #fff;
+}
+
+.footer-about p {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.footer-social-icons a {
+    color: #b0b0b0;
+    font-size: 18px;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-social-icons a:hover {
+    color: #ff9933; /* Orange on hover */
+}
+
+.footer-campaigns ul,
+.footer-location ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-campaigns li,
+.footer-location li {
+    margin-bottom: 15px;
+}
+
+.footer-campaigns a,
+.footer-location a,
+.footer-location span {
+    color: #b0b0b0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.footer-campaigns a:hover,
+.footer-location a:hover {
+    color: #ff9933;
+}
+
+.footer-location li i {
+    color: #ff9933; /* Orange icon */
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.footer-map img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.footer-bottom-bar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+.footer-bottom-bar p {
+    margin: 0;
+    font-size: 13px;
+}
+
+.footer-bottom-links a {
+    color: #b0b0b0;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 13px;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+    color: #ff9933;
+}
+
+/* Scroll button in footer */
+.footer-scroll-btn {
+    background-color: #ff9933; /* Orange background */
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 15px; /* Space when wrapped */
+    margin-left: auto; /* Push to right when wrapped */
+    margin-right: auto;
+}
+
+.footer-scroll-btn:hover {
+    background-color: #e68a00;
+    transform: translateY(-3px);
+}
+
+
+/* Responsive Adjustments for Footer */
+@media (max-width: 992px) {
+    .footer-main-content {
+        flex-direction: column; /* Stack columns vertically */
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-col {
+        min-width: 100%;
+        max-width: 600px; /* Limit width of stacked columns */
+        padding: 0 20px;
+    }
+
+    .footer-about .footer-logo,
+    .footer-social-icons,
+    .footer-campaigns ul,
+    .footer-location ul {
+        justify-content: center; /* Center items in columns */
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-top-logos {
+        gap: 20px;
+    }
+
+    .footer-col h4 {
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+
+    .footer-bottom-bar {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    .footer-bottom-bar p {
+        margin-bottom: 10px;
+    }
+
+    .footer-bottom-links a {
+        margin: 0 10px;
+    }
+
+    .footer-scroll-btn {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-col {
+        padding: 0 10px;
+    }
+
+    .footer-social-icons a {
+        margin-right: 10px;
+        font-size: 16px;
+    }
+
+    .footer-campaigns li,
+    .footer-location li {
+        font-size: 13px;
+    }
+}
+/* General body and common section styling */
+
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: normal; /* To match the image */
+    color: #333;
+    text-align: center;
+}
+
+.section-description {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 50px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Upcoming Events Section Specific Styles */
+.upcoming-events-section {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center; /* For the title and description */
+}
+
+.events-slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Space between arrows and event cards */
+    padding: 0 10px; /* Add some horizontal padding */
+}
+
+.slider-arrow {
+    background-color: #ff9933; /* Orange color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 10px; /* Adjust padding for arrow size */
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex-shrink: 0; /* Prevent arrows from shrinking */
+}
+
+.slider-arrow:hover {
+    background-color: #e68a00; /* Darker orange on hover */
+}
+
+.events-grid-wrapper {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping in the slider container */
+    overflow-x: auto; /* Enable horizontal scrolling if more cards */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
+    gap: 30px; /* Space between event cards */
+    justify-content: center; /* Center cards if not enough to fill space */
+    padding-bottom: 10px; /* Space for potential hidden scrollbar */
+}
+
+.events-grid-wrapper::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, Opera */
+}
+
+.event-item-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    flex: 0 0 auto; /* Do not grow, do not shrink, base on content */
+    width: 380px; /* Fixed width for event cards as per design */
+    min-width: 300px; /* Minimum width to prevent crushing on very small screens */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease-in-out;
+}
+
+.event-item-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-image-wrapper {
+    width: 100%;
+    height: 250px; /* Fixed height for consistent images */
+    overflow: hidden;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.event-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.event-content-area {
+    padding: 25px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Pushes "Read More" to bottom */
+}
+
+.event-content-area h3 {
+    font-size: 22px;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.event-meta {
+    display: flex;
+    flex-direction: column; /* Stack meta items vertically */
+    gap: 8px; /* Space between meta items */
+    margin-bottom: 20px;
+    border-top: 1px solid #eee; /* Separator line */
+    padding-top: 15px;
+}
+
+.event-meta-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #888;
+}
+
+.event-meta-item i {
+    color: #ff9933; /* Orange icon */
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.event-content-area p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Allows paragraph to take up available space */
+}
+
+.event-read-more-btn {
+    background-color: #ff9933; /* Orange button background */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    align-self: flex-start; /* Align button to the left */
+}
+
+.event-read-more-btn:hover {
+    background-color: #e68a00; /* Darker orange on hover */
+}
+
+/* Responsive adjustments for Upcoming Events */
+@media (max-width: 992px) {
+    .events-slider-container {
+        padding: 0 5px; /* Reduce padding around arrows */
+    }
+
+    .event-item-card {
+        width: 340px; /* Slightly smaller cards */
+    }
+}
+
+@media (max-width: 768px) {
+    .upcoming-events-section {
+        padding: 40px 15px;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .section-description {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .events-slider-container {
+        flex-direction: column; /* Stack arrows and cards vertically */
+        gap: 20px;
+    }
+
+    .slider-arrow {
+        width: 90%; /* Make arrows wider when stacked */
+        max-width: 380px;
+        padding: 12px 0;
+        font-size: 18px;
+    }
+
+    .events-grid-wrapper {
+        width: 100%; /* Take full width when stacked */
+        justify-content: flex-start; /* Align cards to start for easier horizontal scroll */
+        padding: 0 15px; /* Ensure content is not against edge */
+        box-sizing: border-box;
+    }
+
+    .event-item-card {
+        width: 90%; /* Make cards a bit wider to fill space */
+        min-width: 280px;
+        max-width: 400px;
+        margin: 0 auto; /* Center card if single */
+    }
+
+    .event-content-area h3 {
+        font-size: 20px;
+    }
+
+    .event-content-area p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 26px;
+    }
+
+    .section-description {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    .event-item-card {
+        width: 100%; /* Fill full width on very small screens */
+    }
+
+    .event-content-area {
+        padding: 20px;
+    }
+
+    .event-read-more-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
